@@ -3,7 +3,7 @@ public class Customer {
     private double wallet;
     public Customer( String name, double wallet){
         this.name = name;
-        this.wallet= 1000;
+        this.wallet= 0;
     }
     public String getName(){
         return this.name;
@@ -14,7 +14,8 @@ public class Customer {
     public void addWallet(double amount){
         this.wallet += amount;
     }
-    public void subtractWallet(double amount){
-        this.wallet -= amount;
+    public void subtractWallet(double amount) {
+            this.wallet -= amount;
+ 
+        }
     }
-}

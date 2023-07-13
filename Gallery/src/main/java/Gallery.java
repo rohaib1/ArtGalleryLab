@@ -20,9 +20,14 @@ public class Gallery {
         return this.till;
     }
 
-    public void setArtwork(Artwork artwork){
+    public void addArtwork(Artwork artwork){
         stock.add(artwork);
     }
+    public void transaction(Artwork artwork, Customer customer){
+        double amount= artwork.getPrice();
+        customer.subtractWallet(amount);
+        this.till += amount;
+    }
 
-    
+
 }
